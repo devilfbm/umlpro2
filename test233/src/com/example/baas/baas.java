@@ -10,15 +10,15 @@ import com.sina.sae.cloudservice.api.CloudDB;
 import com.sina.sae.cloudservice.api.Statistic;
 import com.sina.sae.cloudservice.exception.CloudServiceException;
 
-public class baas {
+public class Baas {
 
 	Context mContext = null;
-	//sae后端
+	//sae鍚庣
 	final String AM = "acremind";
 	final String AK = "0zyn4olmzz";
 	final String SK = "ik34150ykwk4z5x3i22z1wy2l5mzjxwhyl12iyh1";
 
-	public baas(Context mContext) {
+	public Baas(Context mContext) {
 		super();
 		this.mContext = mContext;
 	}
@@ -28,7 +28,7 @@ public class baas {
 
 		if (CloudClient.checkNetwork(mContext)) {
 			try {
-				CloudClient.init(mContext, AM, AK, SK);//初始化
+				CloudClient.init(mContext, AM, AK, SK);//鍒濆鍖�
 				Statistic.launch(mContext);
 				flag = 1;
 			} catch (CloudServiceException e) {

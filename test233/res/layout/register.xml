@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10.0dip"
+    android:background="@drawable/register_bg" >
+    
+    <Button
+        android:id="@+id/r_head" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_marginTop="50.0dip"
+		android:layout_centerHorizontal="true"
+		android:background="@drawable/pic">
+	</Button> 
+    
+    <EditText
+        android:id="@+id/r_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250.0dip"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入账号"
+        android:gravity="center"
+        android:background="@drawable/text"
+        android:inputType="none" />
+
+    <EditText
+        android:id="@+id/r_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/r_username"
+        android:layout_marginTop="10.0dip"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:gravity="center"
+        android:background="@drawable/text"
+        android:inputType="textPassword" />
+    
+    <EditText
+        android:id="@+id/r_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/r_password"
+        android:layout_marginTop="10.0dip"
+        android:ems="10"
+        android:hint="请确认密码"
+        android:gravity="center"
+        android:background="@drawable/text"
+        android:inputType="textPassword" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/r_confirm"
+        android:layout_marginTop="20.0dip"
+        android:orientation="horizontal" >
+  
+    <Button
+        android:id="@+id/r_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login"
+        android:text="注册" />  
+    <Button
+        android:id="@+id/r_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/register"
+        android:text="取消" />
+    
+    </LinearLayout>
+</RelativeLayout>
