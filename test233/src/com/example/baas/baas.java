@@ -10,7 +10,7 @@ import com.sina.sae.cloudservice.api.CloudDB;
 import com.sina.sae.cloudservice.api.Statistic;
 import com.sina.sae.cloudservice.exception.CloudServiceException;
 
-public class Baas {
+public class baas {
 
 	Context mContext = null;
 	//sae鍚庣
@@ -18,7 +18,7 @@ public class Baas {
 	final String AK = "0zyn4olmzz";
 	final String SK = "ik34150ykwk4z5x3i22z1wy2l5mzjxwhyl12iyh1";
 
-	public Baas(Context mContext) {
+	public baas(Context mContext) {
 		super();
 		this.mContext = mContext;
 	}

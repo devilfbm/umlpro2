@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?> 
-<resources> 
-<style name="CustomWindowTitleBackground"> 
-<item name="android:background">@drawable/top</item> 
-</style> 
-<style name="CustomTitleBar" parent="android:Theme"> 
-<item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item> <!--设置titlebar的背景-->
-</style> 
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+
 </resources>

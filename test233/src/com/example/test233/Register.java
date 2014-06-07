@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.baas.Baas;
+import com.example.baas.baas;
 import com.example.test233.R;
 
 public class Register extends Activity {
@@ -26,22 +26,15 @@ public class Register extends Activity {
 	String str3 = null;
 	
 	private boolean registerIsSuccess() {
-		re_username = (EditText) findViewById(R.id.r_username);
-		re_password = (EditText) findViewById(R.id.r_password);
-		re_confirm = (EditText) findViewById(R.id.r_confirm);
-		str1 = re_username.getText().toString().trim();
-		str2 = re_password.getText().toString().trim();
-		str3 = re_confirm.getText().toString().trim();		
-		
-		if ("".equals(re_username)) {
+		if ("".equals(str1)) {
 			Toast.makeText(Register.this, "用户名不能为空", Toast.LENGTH_SHORT).show();
 			return false;
 		}
-		if ("".equals(re_password)) {
+		if ("".equals(str2)) {
 			Toast.makeText(Register.this, "密码不能为空", Toast.LENGTH_SHORT).show();
 			return false;
 		}
-		else if (!re_confirm.equals(re_password)) {
+		else if (!str2.equals(str3)) {
 			Toast.makeText(Register.this, "两次输入的密码不一致", Toast.LENGTH_SHORT).show();
 			return false;
 		}
@@ -49,6 +42,10 @@ public class Register extends Activity {
 	}
 	
 	private void register() {
+		Toast.makeText(Register.this, "注册成功", Toast.LENGTH_SHORT).show();
+		Intent it = new Intent(getApplicationContext(), MapActivity.class);
+		startActivity(it);
+		finish();
 	}
 
 	@Override
@@ -75,6 +72,12 @@ public class Register extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
+				re_username = (EditText) findViewById(R.id.r_username);
+				re_password = (EditText) findViewById(R.id.r_password);
+				re_confirm = (EditText) findViewById(R.id.r_confirm);
+				str1 = re_username.getText().toString();
+				str2 = re_password.getText().toString();
+				str3 = re_confirm.getText().toString();		
 				if (registerIsSuccess()) {
 					register();
 				}

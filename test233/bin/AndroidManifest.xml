@@ -2,11 +2,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.test233"
     android:versionCode="1"
-    android:versionName="1.0" android:installLocation="auto">
+    android:versionName="1.0" >
+    
+    <!-- 网络访问权限 --> 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
 
+    <!-- 离线地图及cache功能所需权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    
+    <!-- 获取手机设置信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    
+    <!-- 屏幕支持 -->
+    <supports-screens 
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+    
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="14" />
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
 
     <application
         android:allowBackup="true"
@@ -22,11 +43,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.test233.MapActivity"
-            android:label="Map" 
-            android:theme="@style/CustomTitleBar" >          
-        </activity>
+        <activity android:name=".Login"></activity>
+        <activity android:name=".Register"></activity>
+        <activity android:name=".MapActivity"></activity>
     </application>
 
 </manifest>
