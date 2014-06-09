@@ -17,7 +17,6 @@ import com.example.baas.baas;
 import com.example.test233.R;
 
 public class Register extends Activity {
-	int register = 0;
 	EditText re_username;
 	EditText re_password;
 	EditText re_confirm;
@@ -34,7 +33,7 @@ public class Register extends Activity {
 			Toast.makeText(Register.this, "密码不能为空", Toast.LENGTH_SHORT).show();
 			return false;
 		}
-		else if (!str2.equals(str3)) {
+		if (!str2.equals(str3)) {
 			Toast.makeText(Register.this, "两次输入的密码不一致", Toast.LENGTH_SHORT).show();
 			return false;
 		}
@@ -51,7 +50,6 @@ public class Register extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);// 隐藏标题
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);// 设置全屏
 		setContentView(R.layout.register);

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -16,5 +16,19 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-
+    <!-- 自定义标题栏 -->
+    <style name="CustomWindowTitleBackground" parent="*android:WindowTitleBackground">
+        <item name="android:background">@drawable/top</item>
+    </style>
+	<style name="CustomWindowTitle" parent="android:TextAppearance.WindowTitle">
+	    <item name="android:textAppearance">@style/CustomWindowTitleText</item>
+	</style>
+	<style name="CustomWindowTitleText" parent="android:TextAppearance.WindowTitle">
+	    <item name="android:textColor">#00f</item>
+	    <item name="android:textSize">14sp</item>
+	    <item name="android:textStyle">bold</item>
+	</style>
+	<style name="notitle">
+	    <item name="android:windowNoTitle">true</item>
+	</style>
 </resources>

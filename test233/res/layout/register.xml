@@ -11,7 +11,7 @@
 		android:layout_height="wrap_content" 
 		android:layout_marginTop="50.0dip"
 		android:layout_centerHorizontal="true"
-		android:background="@drawable/pic">
+		android:background="@drawable/pic" >
 	</Button> 
     
     <EditText
@@ -33,6 +33,7 @@
         android:layout_marginTop="10.0dip"
         android:ems="10"
         android:hint="请输入密码"
+        android:ellipsize="start"
         android:gravity="center"
         android:background="@drawable/text"
         android:inputType="textPassword" />
@@ -46,6 +47,7 @@
         android:layout_marginTop="10.0dip"
         android:ems="10"
         android:hint="请确认密码"
+        android:ellipsize="start"
         android:gravity="center"
         android:background="@drawable/text"
         android:inputType="textPassword" />

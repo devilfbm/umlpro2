@@ -858,10 +858,11 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070003;
+        public static final int abc_search_url_text_holo=0x7f070004;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
+        public static final int white=0x7f070003;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1103,6 +1104,7 @@ containing a value of this type.
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
         public static final int activity_chooser_view_content=0x7f050025;
+        public static final int add=0x7f050048;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
         public static final int bmapsView=0x7f05003c;
@@ -1127,6 +1129,7 @@ containing a value of this type.
         public static final int l_username=0x7f050043;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
+        public static final int menu=0x7f050047;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
@@ -1217,6 +1220,7 @@ containing a value of this type.
         public static final int register=0x7f030019;
         public static final int start=0x7f03001a;
         public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int titlebar=0x7f03001c;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1290,6 +1294,11 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0b008c;
+        public static final int CustomWindowTitle=0x7f0b008e;
+        /**  自定义标题栏 
+         */
+        public static final int CustomWindowTitleBackground=0x7f0b008d;
+        public static final int CustomWindowTitleText=0x7f0b008f;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;
@@ -1492,6 +1501,8 @@ containing a value of this type.
         public static final int Widget_AppCompat_ProgressBar=0x7f0b000a;
         public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0b0009;
         public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b0022;
+        public static final int notitle=0x7f0b0090;
+        public static final int titleTheme=0x7f0b0091;
     }
     public static final class styleable {
         /**  ============================================ 
