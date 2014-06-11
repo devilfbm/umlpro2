@@ -36,14 +36,14 @@ public class LoadingPage extends Activity {
 	EditText lo_password;
 	
 	private boolean loginIsSuccess() {
-		if ("".equals(str1)) {
-			Toast.makeText(getApplicationContext(), "账号不能为空", 0).show();
-			return false;
-		}
-		if ("".equals(str2)) {
-			Toast.makeText(getApplicationContext(), "密码不能为空", 0).show();
-			return false;
-		}
+//		if ("".equals(str1)) {
+//			Toast.makeText(getApplicationContext(), "账号不能为空", 0).show();
+//			return false;
+//		}
+//		if ("".equals(str2)) {
+//			Toast.makeText(getApplicationContext(), "密码不能为空", 0).show();
+//			return false;
+//		}
 			return true;			
 	}
 	private void login() {
