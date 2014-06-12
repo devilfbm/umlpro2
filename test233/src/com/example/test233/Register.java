@@ -14,7 +14,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.baas.baas;
-import com.example.test233.R;
 
 public class Register extends Activity {
 	EditText re_username;

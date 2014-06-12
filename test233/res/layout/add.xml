@@ -2,15 +2,144 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="10.0dip"
-    android:background="@drawable/home" >
-    
-    <Button
-        android:id="@+id/u_head" 
-		android:layout_width="wrap_content" 
-		android:layout_height="wrap_content" 
-		android:layout_marginTop="50.0dip"
-		android:layout_centerHorizontal="true"
-		android:background="@drawable/head" >
-	</Button> 
+    android:background="@drawable/new_bg"
+    android:padding="10.0dip" >
+
+    <LinearLayout
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50.0dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/u_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/head" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/located" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="新生活动中心" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_margin="25.0dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" 
+            android:id="@+id/time"
+            android:layout_marginBottom="15.0dip" >
+            <TextView 
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_gravity="center_vertical"
+            	android:text="时间:" 
+            	android:layout_marginRight="10.0dip" />
+    		<EditText
+       			android:id="@+id/n_startTime"
+        		android:layout_width="85.0dip"
+        		android:layout_height="10.0dip"
+        		android:background="@drawable/text"
+        		android:layout_gravity="center_vertical"
+        		android:inputType="none" 
+        		android:layout_marginRight="9.0dip" />
+    		<TextView 
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_gravity="center_vertical"
+            	android:text="~" 
+            	android:layout_marginRight="9.0dip" />
+    		<EditText
+       			android:id="@+id/n_endTime"
+        		android:layout_width="85.0dip"
+        		android:layout_height="10.0dip"
+        		android:background="@drawable/text"
+        		android:layout_gravity="center_vertical"
+        		android:inputType="none" />
+    	</LinearLayout>
+    	
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="15.0dip" >
+            <TextView 
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_gravity="center_vertical"
+            	android:text="地点:" 
+            	android:layout_marginRight="10.0dip" />
+    		<EditText
+       			android:id="@+id/n_startTime"
+        		android:layout_width="match_parent"
+        		android:layout_height="10.0dip"
+        		android:background="@drawable/text"
+        		android:layout_gravity="center_vertical"
+        		android:inputType="none" />
+    	</LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"	 	
+			android:layout_marginBottom="15.0dip" >
+            <TextView 
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_gravity="center_vertical"
+            	android:text="人数:" 
+            	android:layout_marginRight="10.0dip" />
+    		<EditText
+       			android:id="@+id/n_startTime"
+        		android:layout_width="match_parent"
+        		android:layout_height="10.0dip"
+        		android:background="@drawable/text"
+        		android:layout_gravity="center_vertical"
+        		android:inputType="none" />
+    	</LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip" >
+            <TextView 
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_gravity="center_vertical"
+            	android:text="主题:" 
+            	android:layout_marginRight="10.0dip" />
+    		<EditText
+       			android:id="@+id/n_startTime"
+        		android:layout_width="match_parent"
+        		android:layout_height="10.0dip"
+        		android:background="@drawable/text"
+        		android:layout_gravity="center_vertical"
+        		android:inputType="none" />
+    	</LinearLayout>
+    	
+        <Button 
+            android:id="@+id/addActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/login"
+            android:text="马上发布!" 
+            android:textColor="@color/white" />
+        
+	</LinearLayout>
 </RelativeLayout>
